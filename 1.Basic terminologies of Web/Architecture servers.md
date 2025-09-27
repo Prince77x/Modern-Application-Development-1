@@ -82,7 +82,7 @@ It is **not code**, but a **template** or best practice for solving problems in 
 2. **View** – Handles the user interface and presentation.  
 3. **Controller** – Handles user input and interaction between Model and View.  
 
-This separation allows **modular, maintainable, and scalable applications**.  
+This separation allows **modular, maintainable, and scalable applications**.   
 
 ---
 

@@ -173,7 +173,7 @@ It has **three major layers/components**:
   - Handling requests and responses.  
 
 📌 **Example:** When you order food, this layer checks restaurant availability, price, and delivery time.  
-
+ 
 ---
 
 ## 3️⃣ Storage Layer (Database/Storage)  
