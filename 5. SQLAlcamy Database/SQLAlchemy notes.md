@@ -1,3 +1,50 @@
+### What is ORM ?
+ - ORM (Object Relational Mapping) is a technique that allows you to interact with a database using objects and classes, instead of writing SQL queries.
+
+#### 🔥 ORM converts:
+
+- Python classes → Database tables
+- Python objects → Table rows
+- Python attributes → Table columns
+- Python operations → SQL queries
+
+---
+### ✅ What is SQLAlchemy?
+
+SQLAlchemy is a **Python library** used to interact with databases.  
+It allows you to write Python code instead of writing raw SQL queries.
+
+It supports many databases:
+
+- SQLite  
+- MySQL  
+- PostgreSQL  
+- Oracle  
+- SQL Server  
+… and many more.
+
+SQLAlchemy has two main parts:
+
+- **Core** – helps you write SQL-like queries in Python  
+- **ORM (Object Relational Mapper)** – allows you to use Python classes as database tables  
+
+---
+
+### ✅ Why do we use SQLAlchemy?
+
+#### 1️⃣ Because it makes database work easier
+
+Instead of writing this:
+
+```sql
+SELECT * FROM users WHERE age > 20;
+```
+- you can write :
+```python
+users = session.query(User).filter(User.age > 20).all()
+```
+---
+
 When working with **Flask-SQLAlchemy** in a Flask web application, it's crucial to understand how to perform queries and handle errors that may arise during database interactions. Here is a detailed set of notes on **Flask-SQLAlchemy** queries and how to implement **error handling** effectively:
 
 ---
