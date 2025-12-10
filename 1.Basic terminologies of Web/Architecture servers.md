@@ -33,7 +33,7 @@ These are the two most common **network/application architectures**.
 - Databases  
 
 
-
+00
 ---
 
 ## 🔗 Peer-to-Peer (P2P) Model
