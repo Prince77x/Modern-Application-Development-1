@@ -156,4 +156,4 @@ app.run()
 - It’s integrated by default in Flask.  
 - You can use it independently for small scripts, templated emails, or static sites.
 
-```
+``` 
