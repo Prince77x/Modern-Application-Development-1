@@ -118,7 +118,7 @@
 - `Flask-Mail` → Send emails  
 - `Flask-Bcrypt` → Password hashing  
 - `Flask-Caching` → Performance  
-- `Flask-RESTful` → API structure  
+- `Flask-RESTful` → API structure   
 - `Flask-Admin` → Admin panel  
 - `Flask-Uploads` → File handling  
 - `Flask-SocketIO` → Real-time apps  
