@@ -1385,3 +1385,5 @@ class Class(db.Model):
 
 - ✅ **Yes, `backref` can be used** in a **many-to-many relationship** **if** using `db.Table` for the association.
 - ❌ If you have an **explicit association model**, use **`back_populates`** instead of `backref`.
+
+
