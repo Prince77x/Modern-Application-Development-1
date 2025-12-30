@@ -12,7 +12,7 @@ Understand what Jinja2 is, install/setup, and render a first template.
 - Basic usage with `Environment`, `Template`, `FileSystemLoader`.  
 - Integration with Flask/Django.
 
-**Example:**
+**Example:** 
 ```
 from jinja2 import Template
 t = Template("Hello {{ name }}!")

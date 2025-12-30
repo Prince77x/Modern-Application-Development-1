@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
+    <title>Dictionary</title>
 </head>
 <body>
-    <header>my heading</header>
+    {% for key,value in profile.items() %}
+        {{key}} -> {{value}},
+    {% endfor %}
 </body>
 </html>

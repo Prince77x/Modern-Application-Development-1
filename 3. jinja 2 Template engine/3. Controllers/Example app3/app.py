@@ -8,7 +8,19 @@ def info():
 
 @app.route('/ifelse')
 def ifelse():
-    return render_template('./ifelse.html',age= 19)
+    return render_template('./ifelse.html',age= 17)
+
+@app.route('/forloop')
+def forloop():
+    return render_template('./for_loop.html', friends = ["Prince", "Rahul", "Amit", "Neha", "Sneha"])
+
+@app.route('/dict')
+def dict():
+    return render_template('./dictionary.html', profile = {"name": "Prince", "club": "Aryavarta Sangam", "region": "Mithila"})
+
+@app.route('/main')
+def main():
+    return render_template('./main.html')
 
 if __name__ == "__main__":
     app.run(debug=True) 

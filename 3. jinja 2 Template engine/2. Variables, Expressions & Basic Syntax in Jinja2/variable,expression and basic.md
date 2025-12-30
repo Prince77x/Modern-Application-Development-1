@@ -1,4 +1,4 @@
-# 🧩 Jinja2 Variables, Expressions, and Filters
+f# 🧩 Jinja2 Variables, Expressions, and Filters
 
 ## 1️⃣ Variables in Jinja2
 
@@ -13,7 +13,7 @@ name = "Prince"
 age = 20
 ```
 
-**Template:**
+**Template:** 
 ```
 My name is {{ name }} and I am {{ age }} years old.
 ```
@@ -88,12 +88,12 @@ Hello Prince from Bihar!
 
 ---
 
-## 4️⃣ Filters in Jinja2
+## 4️⃣ Filters in Jinja2 
 
 Filters modify variables.
 
 **Syntax:**
-```
+``` 
 {{ variable | filter }}
 ```
 
