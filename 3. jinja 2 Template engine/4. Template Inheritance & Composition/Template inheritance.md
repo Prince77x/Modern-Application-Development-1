@@ -1,5 +1,6 @@
-
-# 🎯 Objectives
+# Template Inheritance & Composition
+---
+## 🎯 Objectives
 
 - Reuse and extend layouts  
 - Build a base template and create child pages from it  
@@ -7,43 +8,48 @@
 
 ---
 
-# 📌 Core Topics
+## 📌 Core Topics
 
-## 1️⃣ `{% block %}` and `{% endblock %}`
+### 1️⃣ `{% block %}` and `{% endblock %}`
 Used to define editable sections in a base template.
+
+```jinja2 
 {% block content %}
 {% endblock %}
-
-text
-
-## 2️⃣ `{% extends %}`
+```
+---
+### 2️⃣ `{% extends %}`
 Used by child templates to inherit from a base layout.
+```jinja2
 {% extends "base.html" %}
-
-text
-
-## 3️⃣ `{% include %}`
+```
+---
+### 3️⃣ `{% include %}`
 Include reusable template parts (header, footer, navbar).
+```jinja2
 {% include "header.html" %}
-
-text
-
-## 4️⃣ `{% import %}`
+```
+---
+### 4️⃣ `{% import %}`
 Import macros or reusable functions.
+```jinja2
 {% import "macros.html" as tools %}
 {{ tools.button("Save") }}
-
-text
-
+```
+---
 ## 5️⃣ `super()`
 Call parent block content inside a child block.
+```jinja2
 {% block content %}
 {{ super() }}
 
-<p>This is extra content added by the child.</p> {% endblock %} ```
+<p>This is extra content added by the child.</p> {% endblock %}
+```
+---
+
 🏗️ Basic Example Structure
 📁 Folder Setup
-text
+```arduino
 project/
 │
 ├─ templates/
@@ -54,8 +60,10 @@ project/
 │   └─ header.html
 │
 └─ app.py
-🔹 base.html
-text
+```
+
+#### 🔹 base.html
+```html
 <html>
 <head>
     <title>{% block title %}My Site{% endblock %}</title>
@@ -68,12 +76,14 @@ text
 
 </body>
 </html>
-🔹 header.html
-text
+```
+#### 🔹 header.html
+```html
 <h1>Welcome to the Website!</h1>
 <hr>
-🔹 home.html
-text
+```
+#### 🔹 home.html
+```html
 {% extends "base.html" %}
 
 {% block title %}Home Page{% endblock %}
@@ -81,8 +91,9 @@ text
 {% block content %}
 <p>This is Home Page Content.</p>
 {% endblock %}
-🔹 about.html
-text
+```
+#### 🔹 about.html
+```html
 {% extends "base.html" %}
 
 {% block title %}About Us{% endblock %}
@@ -91,6 +102,4 @@ text
 {{ super() }}
 <p>More info about our mission.</p>
 {% endblock %}
-text
-
-***
+```
