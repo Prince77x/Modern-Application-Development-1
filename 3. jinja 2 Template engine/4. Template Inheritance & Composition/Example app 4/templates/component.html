@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>component</title>
+</head>
+<body>
+    {% macro card(title, discription) %}
+    <div>
+        <h3>{{ title }}</h3>
+        <p>{{ discription }}</p>
+    </div>
+    {% endmacro %}
+
+    {% macro sevice_card(service_type, discription) %}
+    <div>
+        <h3>{{ service_type}}</h3>
+        <p>{{discription}}</p>
+    </div>
+    {% endmacro %}
+
+</body>
+</html>

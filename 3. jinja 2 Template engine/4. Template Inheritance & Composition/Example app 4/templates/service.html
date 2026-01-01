@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% import "component.html" as comp %}
+{% block content %}
+{{ super() }}
+{% set services = [{"name": "Web Development", "details": "Full-stack website and app creation."},
+    {"name": "Automation Scripts", "details": "Python scripts to automate tasks."},
+    {"name": "API Integration", "details": "Connect systems, payment gateways, and third-party services."}] %}
+ 
+{% for ser in services %}
+    {{ comp.sevice_card(ser.name,ser.discription) }}
+
+{% endfor %}
+ 
+{% endblock %}

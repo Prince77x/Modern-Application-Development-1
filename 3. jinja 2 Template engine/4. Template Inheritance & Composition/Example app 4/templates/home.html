@@ -1,7 +1,16 @@
 {% extends "base.html" %}
+{% import "component.html" as comp %}
 
 {% block content %}
 <h1> welcome prince</h1>
 <h1> this is the home dashboard </h1>
+
+{{ comp.card("Python", "Powerful language") }}
+{{ comp.card("Flask", "Micro web framework") }}
+{{ comp.card("Jinja2", "Template engine for Flask") }}
+
 {% endblock %}
+
+ 
+ 
 
