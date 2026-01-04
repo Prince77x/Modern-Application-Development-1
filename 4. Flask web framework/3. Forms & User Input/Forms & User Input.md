@@ -420,7 +420,7 @@ if not name:
 pip install flask-wtf
 ```
 
-**Basic Form Class:**
+**Basic Forms.py Class:**
 ```python
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
