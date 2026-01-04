@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form </title>
+</head>
+<body>
+    <div>
+        <form action="/register" method="POST">
+            {{ form.hidden_tag() }} <!-- insert csrf token,
+                                        Protect against csrf attack-->
+
+            {{ form.username.label }} <br> <!-- display username as text -->
+            {{ form.username() }} <br> <!-- takes input for username -->
+
+            {% for error in form.username.errors %}
+                <p style="color:red;">{{ error }}</p>  <!-- Shows validation errors:
+                                                                    Empty input
+                                                                    Too short
+                                                                    Errors come from validators-->
+            {% endfor %}
+
+            {{ form.email.label }} <br>
+            {{ form.email() }} <br>
+            {% for error in form.email.errors %}
+                <p style="color:red;">{{error}}</p>
+            {% endfor %}
+
+            {{ form.password.label }} <Br></Br>
+            {{ form.password() }} <br>
+            {% for error in form.password.errors %}
+                 <p style="color:red;">{{error}}</p>
+            {% endfor %}
+            
+            {{ form.confirm_password.label}} <br>
+            {{ form.confirm_password()}} <br>
+            {% for error in form.confirm_password.errors %}
+                 <p style="color:red;">{{error}}</p>
+            {% endfor %}
+            
+            {{ form.submit()}}
+            
+        </form>
+    </div>
+</body>
+</html>
