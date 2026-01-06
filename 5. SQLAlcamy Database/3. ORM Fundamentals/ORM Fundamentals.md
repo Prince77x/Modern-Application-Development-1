@@ -160,6 +160,22 @@ user = User(name="Prince", email="p@gmail.com")
 (Session and Persistence are covered in the next module.)
 
 ---
+# 🧠 Very Important Mapping (ORM ↔ SQL)
+
+## SQLAlchemy Types vs SQL Types
+
+| SQLAlchemy Type | SQL Type  |
+|-----------------|-----------|
+| `Integer`       | `INT`     |
+| `String`        | `VARCHAR` |
+| `Text`          | `TEXT`    |
+| `Float`         | `FLOAT`   |
+| `Numeric`       | `DECIMAL` |
+| `Boolean`       | `BOOLEAN` |
+| `Date`          | `DATE`    |
+| `DateTime`      | `DATETIME`|
+| `LargeBinary`   | `BLOB`    |
+---
 
 ## 🧪 Practice Questions (Very Important)
 
