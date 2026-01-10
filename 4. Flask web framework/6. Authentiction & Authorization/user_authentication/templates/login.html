@@ -6,6 +6,22 @@
     <title>Login page </title>
 </head>
 <body>
-    <h1> login page </h1>
+    <form action="/login" method="POST"> 
+    {{ form.hidden_tag() }}
+
+    {{ form.email.label }}
+    {{ form.email() }}
+    {% for error in form.email.errors %}
+        <p style="color:red;">{{error}}</p> 
+    {% endfor %}
+
+    {{ form.password.label }}
+    {{ form.password() }}
+    {% for error in form.password.errors %}
+        <p style="color:red;">{{error}}</p>
+    {% endfor %}
+
+    {{ form.submit() }}
+    </form>
 </body>
 </html>
