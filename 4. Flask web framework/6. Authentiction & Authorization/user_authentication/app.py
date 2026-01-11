@@ -5,7 +5,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from forms import RegisterForm, LoginForm
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 app = Flask(__name__)
-# flask login setup 
+# flask login setup
+
 
 # app configuration 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
@@ -13,6 +14,7 @@ app.config["SECRET_KEY"] = "Apple123"
 db.init_app(app)
 with app.app_context():
     db.create_all()
+
 
 # flask login setup 
 login_manager = LoginManager()
@@ -79,12 +81,12 @@ def logout():
     flash(" you have logout successfully ")
     return redirect(url_for('login'))
 
+
+#dashboard 
 @app.route('/dashboard')
 @login_required
 def dashboard():
     return render_template("dashboard.html", username= current_user.username)
-
-
 
 
 
